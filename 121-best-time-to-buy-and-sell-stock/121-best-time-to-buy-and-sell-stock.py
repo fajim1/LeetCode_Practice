@@ -16,8 +16,7 @@ class Solution:
                 
             else:
                 
-                if profit < prices[right]-prices[left]:
-                    profit = prices[right]-prices[left]
+                profit = max(profit,(prices[right]-prices[left]))
                 
                 right += 1
                 
