@@ -8,7 +8,6 @@ class Solution:
         profit = 0
         
         while right < len(prices):
-            print(left,right)
             if prices[right]-prices[left] < 0:
                 
                 left = right
@@ -16,8 +15,7 @@ class Solution:
                 
             else:
                 
-                profit = max(profit,(prices[right]-prices[left]))
-                
+                profit = max(profit,(prices[right]-prices[left]))   
                 right += 1
                 
         
