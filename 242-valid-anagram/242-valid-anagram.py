@@ -9,8 +9,6 @@ class Solution:
                 dic[char] +=1
             else:
                 dic[char] = 1
-                
-        print(dic)
         
         for char in t:
             
@@ -24,6 +22,5 @@ class Solution:
         for vals in dic.values():
             if vals >0:
                 return False
-        
-        
+              
         return True
