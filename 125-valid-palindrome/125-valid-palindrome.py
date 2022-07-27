@@ -6,10 +6,9 @@ class Solution:
 
         
         s = s.lower()
-        s = re.sub(r'[^\w\s]','',s)
-        s = s.replace(" ","")
-        s = s.replace("_","")
-        
+        s = re.sub(r'\W+','',s)
+        s = re.sub(r'_','',s)
+
         start = 0
         end = len(s)-1
         
