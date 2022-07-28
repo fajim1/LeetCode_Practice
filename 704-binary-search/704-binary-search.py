@@ -6,7 +6,7 @@ class Solution:
         mid = (left+right)//2
         
         count = 0
-        while count<=15:
+        while count<=14:
             
             if nums[mid] < target:
                 left = mid+1
