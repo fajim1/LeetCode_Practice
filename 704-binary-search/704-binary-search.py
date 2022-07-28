@@ -5,8 +5,9 @@ class Solution:
         right = len(nums)-1
         mid = (left+right)//2
         
-        count = 0
-        while count<=14:
+        countl = 0
+        countr = 0
+        while countl<=2 and countr <=2:
             
             if nums[mid] < target:
                 left = mid+1
@@ -18,7 +19,13 @@ class Solution:
                 return mid
             
             mid = (left+right)//2
-            count+=1
+            
+            if mid==left:
+                countl+=1
+            elif mid == right:
+                countl+=1
+            
+            
         
         return -1
                 
