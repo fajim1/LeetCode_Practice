@@ -18,8 +18,6 @@ class Solution:
             
             mid = (left+right)//2
             
-
-            
         return -1
                 
             
