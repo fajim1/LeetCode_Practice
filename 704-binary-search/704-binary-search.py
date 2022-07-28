@@ -25,8 +25,6 @@ class Solution:
             elif mid == right:
                 countl+=1
             
-            
-        
         return -1
                 
             
