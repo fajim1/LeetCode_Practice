@@ -4,4 +4,4 @@ SELECT name as Customers
 FROM Customers
 left join Orders
 ON Customers.id = Orders.customerID
-WHERE customerID is null
+WHERE CustomerID is null
