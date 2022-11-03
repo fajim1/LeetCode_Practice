@@ -2,7 +2,9 @@
 WITH b as (
     SELECT distinct product_id
     FROM Products
-), t as (
+), 
+
+t as (
     SELECT *,
     ROW_NUMBER() OVER(PARTITION BY product_id ORDER by change_date desc) as 'row'
     FROM Products
