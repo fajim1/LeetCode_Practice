@@ -7,10 +7,10 @@ class Solution:
         
         while len(stones)>1:
             
-            first = heapq.heappop(stones)
-            first = -first
-            second = heapq.heappop(stones)
-            second = -second
+            first = -1*heapq.heappop(stones)
+  
+            second = -1*heapq.heappop(stones)
+ 
             
             if first>second:
                 diff = first-second
